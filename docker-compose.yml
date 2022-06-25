@@ -3,7 +3,7 @@ version: "3.7"
 services:
   db:
     image: postgres:13-alpine
-    container_name: postgres:13-alpine
+    container_name: be_postgres-db_13-alpine
     restart: always
     environment:
       POSTGRES_DB: postgres
@@ -15,7 +15,7 @@ services:
       - 5432:5432
   pgadmin:
     image: dpage/pgadmin4
-    container_name: pgAdmin
+    container_name: be_pgadmin
     restart: always
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@nestjs.com
