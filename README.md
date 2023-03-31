@@ -1,3 +1,3 @@
-# Tuitter API: (YouTube course)
+# be API: (YouTube course)
 
 Source code from the YouTube Nest.js course

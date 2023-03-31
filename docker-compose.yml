@@ -6,9 +6,9 @@ services:
     container_name: be_postgres-db_13-alpine
     restart: always
     environment:
-      POSTGRES_DB: postgres
+      POSTGRES_DB: bedb
       POSTGRES_USER: admin
-      POSTGRES_PASSWORD: my-weak-password
+      POSTGRES_PASSWORD: yYtG9%U@pqioQ9Y
     volumes:
       - /var/lib/postgresql/data
     ports:
@@ -18,8 +18,8 @@ services:
     container_name: be_pgadmin
     restart: always
     environment:
-      PGADMIN_DEFAULT_EMAIL: admin@nestjs.com
-      PGADMIN_DEFAULT_PASSWORD: my-weak-password
+      PGADMIN_DEFAULT_EMAIL: gabrieltonelli@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: afull100PRE
       PGADMIN_LISTEN_PORT: 82
     ports:
       - 8082:82

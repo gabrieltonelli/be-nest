@@ -12,6 +12,7 @@ import {
 } from 'typeorm';
 
 import { Tuit } from 'src/modules/tuits/tuit.entity';
+import { Contact } from 'src/modules/contacts/contact.entity';
 import { genSalt, hash } from 'bcryptjs';
 
 @Entity()
@@ -35,6 +36,9 @@ export class User extends BaseEntity {
 
   @OneToMany((type) => Tuit, (tuit) => tuit.user)
   tuits: Tuit[];
+
+  @OneToMany((type) => Tuit, (tuit) => tuit.user)
+  contacts: Contact[];
 
   @Column({ nullable: false, default: 0 })
   followers: number;

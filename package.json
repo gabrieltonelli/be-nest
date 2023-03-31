@@ -1,8 +1,8 @@
 {
-  "name": "tuitter-api",
+  "name": "be-api",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "Gabriel Tonelli",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
